@@ -12,7 +12,6 @@ class Author
   
   def add_post(post)
     post.author = self
-    @@post_count << post
     @posts << post
   end
   
