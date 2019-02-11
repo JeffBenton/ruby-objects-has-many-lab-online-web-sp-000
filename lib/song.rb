@@ -5,6 +5,3 @@ class Song
     @name = name
   end
 end
-
-y = new Song("hello")
-puts y.name
