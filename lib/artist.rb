@@ -18,3 +18,6 @@ class Artist
     self.add_song(new Song(name))
   end
 end
+
+y = new Artist("jeff")
+puts y.name
