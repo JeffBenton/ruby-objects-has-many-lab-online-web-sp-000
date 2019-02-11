@@ -1,4 +1,4 @@
-include song
+include 'song.rb'
 
 class Artist
   attr_accessor :name
