@@ -14,6 +14,7 @@ class Post
     begin
       return @author.name
     rescue NoMethodError
+      return nil
   end
   
 end
