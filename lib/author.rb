@@ -1,6 +1,6 @@
 class Author
   attr_accessor :name
-  @@all = []
+  @@post_count = []
   def initialize(name)
     @name = name
     @posts = []
@@ -13,7 +13,7 @@ class Author
   def add_post(post)
     post.author = self
     @posts << post
-    @@all << post
+    @@post_count << post
   end
   
   def add_post_by_title(title)
@@ -21,7 +21,7 @@ class Author
   end
   
   def self.post_count
-    @@all.length
+    @@post_count.length
   end
   
 end
