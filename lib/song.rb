@@ -12,6 +12,10 @@ class Song
   end
   
   def artist_name
-    self.artist.name
+    begin
+      return self.artist.name
+    rescue NoMethodError
+      return nil
+    end
   end
 end
