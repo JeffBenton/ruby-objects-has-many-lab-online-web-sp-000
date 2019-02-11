@@ -13,7 +13,7 @@ class Post
   def author_name
     begin
       return @author.name
-    rescue Active
+    rescue ActiveRecord
   end
   
 end
